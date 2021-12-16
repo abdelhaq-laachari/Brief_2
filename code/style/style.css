@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+footer{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(0, 0, 0);   
+    overflow-x: hidden;
+}
+.menu{
+    display: flex;
+    font-family: Arial;
+    justify-content: space-between;
+}
+header .logo{
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 51px;
+    flex: 0 1 51PX;
+}
+header .logo img{
+    height: inherit;
+    
+}
+/* responsive*/
+nav .menu ul{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    align-items: center;
+    border-radius: 10px;
+}
+header nav a {
+    margin: 5px;
+    padding: 10px 10px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.about{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.about:hover{
+    font-weight: 500;
+    color: rgb(247, 0, 33);
+}
+header nav a:hover{
+    color: #24262b;
+	background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.what-text{
+    color: white;
+   margin-top: 160px;
+   margin-left: 40PX;
+}
+.our-text{
+    color: white;
+   margin-top: 160px;
+   margin-left: 40PX;
+}
+.what-text h1 {
+    text-decoration: none;
+    font-size: 25px;
+}
+.what-text p{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 19px;
+}
+.our-text h1 {
+    text-decoration: none;
+    font-size: 25px;
+}
+.our-text p{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 19px;
+}
+
+.what{
+    display: flex;
+}
+.what img {
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-left: 70px;
+}
+
+
+.our{
+    display: flex;
+    justify-content: space-between;
+}
+.our img {
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-right: 70px;
+}
+#text2{
+    margin-left: 100px;
+}
+#check {
+    display: none;
+  }
+  .click-menu{
+    cursor: pointer;
+  }
+.title{
+    margin-top: 100px;
+    justify-content: center;
+}
+.title h1 {
+    color: white;
+}
+.slide {
+    display: flex;
+    margin-left: 90px;
+    margin-top: 20px;
+    height: 250px;
+    
+}
+.slide img {
+    border-radius: 30px;
+    padding: 10px;
+    width: 250PX;
+    align-self: flex-start;
+}
+.pics{
+    align-self: flex-end;
+}
+.title h1{
+ text-align: center;
+}
+.partner h1{
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+.partner{
+    margin-bottom: 100px;
+}
+.partner img {
+    width: 300px;
+    height: 150px;
+}
+.partner figure {
+    padding: 10px;
+    display: flex;
+    overflow-x: auto;
+}
+.partner figure::-webkit-scrollbar{
+    width: 0;
+}
+.partner figure img {
+    border-radius: 20px;
+    padding: 5px;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+ul{
+    list-style: none;
+    padding: 0 20px;
+}
+.footer{
+    padding: 100px 0;
+    background-color: #4C0070;
+}
+.row {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.f-cool{
+    width: 20%;
+}
+.f-cool h4{
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.f-cool h4::before{
+	content: '';
+	position: absolute;
+	
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 80px;
+}
+.f-cool ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.f-cool ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.f-cool p{
+    font-size: 14px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 200;
+	color: #bbbbbb;
+}
+.f-cool ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.f-cool .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.f-cool .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+@media(max-width: 1024px){
+    .slide {
+        display: flex;
+        margin-left: 5px;
+        margin-top: 20px;
+        height: 229px;
+        justify-content: center;
+    }
+    .slide img {
+        border-radius: 30px;
+        padding: 10px;
+        width: 250px;
+        align-self: flex-start;
+    }
+    .what-text p{
+    margin-left: -1px;
+    margin-top: 10px;
+    font-size: 15px;
+    }
+    .our img {
+        border-radius: 20px;
+        margin-top: 123px;
+        margin-right: 38px;
+    }
+    .our-text p {
+        margin-left: -65px;
+        margin-top: 16px;
+        font-size: 19px;
+    }
+    .f-cool h4 {
+        font-size: 18px;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        font-weight: 500;
+        position: relative;
+        padding: 20px;
+    }
+    .f-cool p {
+        font-size: 13px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 200;
+        color: #bbbbbb;
+        padding: 0 10px;
+    }
+
+}
+@media(max-width: 768px){
+    nav .menu ul{
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 50px;
+        align-items: center;
+        border-radius: 10px;
+    }
+    .what img {
+        border-radius: 20px;
+        margin-top: 176px;
+        margin-left: 30px;
+        width: 350px;
+    }
+    header .logo{
+        margin-top: 20px;
+        margin-left: 20px;
+        height: 37px;
+    }
+    .what-text p {
+        margin-left: -10px;
+        margin-top: 12px;
+        font-size: 12px;
+    }
+    .what-text h1 {
+        text-decoration: none;
+        font-size: 25px;
+        margin-top: 54px;
+    }
+    .our {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .our img {
+        border-radius: 20px;
+        margin-top: 139px;
+        margin-right: 34px;
+        width: 350px;
+    }
+    .our-text h1 {
+        text-decoration: none;
+        font-size: 25px;
+        margin-left: -76px;
+    }
+    .our-text p {
+        margin-left: -85px;
+        margin-top: 6px;
+        font-size: 15px;
+    }
+    .slide img {
+        border-radius: 30px;
+        padding: 10px;
+        width: 188PX;
+        align-self: flex-start;
+    }
+    .slide {
+        display: flex;
+        margin-left: 0px;
+        margin-top: 20px;
+        height: 165px;
+        justify-content: center;
+    }
+    .footer {
+        padding: 48px 0;
+        background-color: #4C0070;
+    }
+    .f-cool p {
+        font-size: 11px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 200;
+        color: #bbbbbb;
+        padding: 0 10px;
+    }
+    .f-cool .social-links a {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        background-color: rgba(255,255,255,0.2);
+        margin: 0 4px 10px 0;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+    }
+    .f-cool ul li a {
+        font-size: 11px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+    }
+}
+@media(max-width: 426px){
+
+    .click-menu{
+        margin-top: 20px;
+        font-size: 30px;
+        color: white;
+        margin-right: 10px;
+    }
+    nav .menu ul a {
+        margin-top: 45px;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+    }
+    header nav a {
+        /* margin: -29px; */
+        padding: 10px 10px;
+        color: white;
+        text-decoration: none;
+        transition: all 0.5s ease;
+    }
+    nav .menu ul {
+        margin-top: -25px;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 9999;
+        flex-direction: column;
+        top: 100px;
+        background: rgb(167, 161, 161);
+        right: -120%;
+        transition: all 0.5s ease;
+    }
+      #check:checked ~  ul {
+        right: -12%;
+        width: 101%;
+      }
+    .what {
+        display: flex;
+        flex-direction: column;
+    }
+    .what img {
+        border-radius: 20px;
+        margin-top: 52px;
+        margin-left: 30px;
+        width: 310px;
+    }
+    .what-text {
+        color: white;
+        margin-top: -32px;
+        margin-left: 71PX;
+    }
+    .what-text h1 {
+        text-decoration: none;
+        font-size: 25px;
+        margin-top: 54px;
+        margin-left: -30px;
+    }
+    .what-text p {
+        margin-left: -39px;
+        margin-top: 12px;
+        font-size: 12px;
+    }
+    .our {
+        display: flex;
+        flex-direction: column;
+    }
+    .our-text {
+        color: white;
+        margin-top: 50px;
+        margin-left: 40PX;
+    }
+    .our img {
+        border-radius: 20px;
+        margin-top: 19px;
+        margin-left: 38px;
+        width: 350px;
+    }
+    .slide {
+        display: flex;
+        margin-left: 135px;
+        margin-right: 106px;
+        margin-top: 66px;
+        height: 501px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    header .logo{
+        margin-top: 20px;
+        margin-left: 20px;
+        height: 31px;
+        flex: 0 1 51PX;
+    }
+    .f-cool h4 {
+        font-size: 12px;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        font-weight: 500;
+        position: relative;
+        padding: 4px;
+    }
+}
+@media(max-width: 376px){
+    .slide {
+        display: flex;
+        margin-left: 112px;
+        margin-right: 94px;
+        margin-top: 34px;
+        height: 439px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .slide img {
+        border-radius: 30px;
+        padding: 10px;
+        width: 171PX;
+        align-self: flex-start;
+    }
+    .title h1 {
+        text-align: center;
+        width: 300px;
+        margin: auto;
+    }
+    .f-cool h4 {
+        font-size: 11px;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        font-weight: 500;
+        position: relative;
+        padding: 4px;
+    }
+    #check:checked ~ ul {
+        right: -15%;
+        width: 101%;
+    }
+}
